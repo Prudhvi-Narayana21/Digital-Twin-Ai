@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us | Digital Twin AI{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold text-primary">Get in Touch</h1>
+        <p class="text-muted">
+            Have a question, suggestion, or feedback? We'd love to hear from you.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+
+            <div class="card shadow border-0 rounded-4">
+
+                <div class="card-body p-4">
+
+                    <form method="POST">
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Full Name</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Your Name"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Email Address</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="you@example.com"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Subject</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Subject"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea
+                                class="form-control"
+                                rows="6"
+                                placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+
+                        <button class="btn btn-primary btn-lg w-100">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-lg-5">
+
+            <div class="card shadow border-0 rounded-4 h-100">
+
+                <div class="card-body p-4">
+
+                    <h3 class="fw-bold mb-4">
+                        Contact Information
+                    </h3>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold text-primary">Email</h6>
+                        <p class="text-muted mb-0">
+                            support@digitaltwin.ai
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold text-primary">Phone</h6>
+                        <p class="text-muted mb-0">
+                            +91 98765 43210
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold text-primary">Office</h6>
+                        <p class="text-muted mb-0">
+                            Digital Twin AI Inc.<br>
+                            Hyderabad, Telangana, India
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold text-primary">Working Hours</h6>
+                        <p class="text-muted mb-0">
+                            Monday - Friday<br>
+                            9:00 AM - 6:00 PM
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <h6 class="fw-bold mb-3">
+                        Follow Us
+                    </h6>
+
+                    <div class="d-flex gap-3">
+
+                        <a href="#" class="btn btn-outline-primary">
+                            Facebook
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info">
+                            LinkedIn
+                        </a>
+
+                        <a href="#" class="btn btn-outline-dark">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
